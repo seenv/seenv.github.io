@@ -1,0 +1,26 @@
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6 2/vendor/bundle/ruby/3.2.0/gems/posix-spawn-0.3.15/ext
+/Users/pashmac/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6 2/vendor/bundle/ruby/3.2.0/gems/posix-spawn-0.3.15/ext
+make DESTDIR\= sitearchdir\=./.gem.20230817-70505-jtkvbv sitelibdir\=./.gem.20230817-70505-jtkvbv clean
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6 2/vendor/bundle/ruby/3.2.0/gems/posix-spawn-0.3.15/ext
+make DESTDIR\= sitearchdir\=./.gem.20230817-70505-jtkvbv sitelibdir\=./.gem.20230817-70505-jtkvbv
+compiling posix-spawn.c
+posix-spawn.c:226:27: warning: incompatible function pointer types passing 'int (VALUE, VALUE, posix_spawn_file_actions_t *)' (aka 'int (unsigned long, unsigned long, void **)') to parameter of type 'int (*)(VALUE, VALUE, VALUE)' (aka 'int (*)(unsigned long, unsigned long, unsigned long)') [-Wincompatible-function-pointer-types]
+        rb_hash_foreach(options, posixspawn_file_actions_operations_iter, (VALUE)fops);
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/3.2.2/include/ruby-3.2.0/ruby/internal/intern/hash.h:83:40: note: passing argument to parameter 'func' here
+void rb_hash_foreach(VALUE hash, int (*func)(VALUE key, VALUE val, VALUE arg), VALUE arg);
+                                       ^
+1 warning generated.
+linking shared-object posix_spawn_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6 2/vendor/bundle/ruby/3.2.0/gems/posix-spawn-0.3.15/ext
+make DESTDIR\= sitearchdir\=./.gem.20230817-70505-jtkvbv sitelibdir\=./.gem.20230817-70505-jtkvbv install
+/usr/bin/install -c -m 0755 posix_spawn_ext.bundle ./.gem.20230817-70505-jtkvbv
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6 2/vendor/bundle/ruby/3.2.0/gems/posix-spawn-0.3.15/ext
+make DESTDIR\= sitearchdir\=./.gem.20230817-70505-jtkvbv sitelibdir\=./.gem.20230817-70505-jtkvbv clean
