@@ -1,0 +1,79 @@
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6_ok/vendor/bundle/ruby/2.7.0/gems/duktape-2.7.0.0/ext/duktape
+/Users/pashmac/.rbenv/versions/2.7.4/bin/ruby -I /Users/pashmac/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230817-15727-17erjo.rb extconf.rb
+checking for rb_sym2str()... yes
+creating Makefile
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6_ok/vendor/bundle/ruby/2.7.0/gems/duktape-2.7.0.0/ext/duktape
+make "DESTDIR=" clean
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6_ok/vendor/bundle/ruby/2.7.0/gems/duktape-2.7.0.0/ext/duktape
+make "DESTDIR="
+compiling duktape.c
+compiling duktape_ext.c
+duktape_ext.c:695:23: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  id_complex_object = rb_intern("complex_object");
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+duktape_ext.c:695:23: note: '{' token is here
+  id_complex_object = rb_intern("complex_object");
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+duktape_ext.c:695:23: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  id_complex_object = rb_intern("complex_object");
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+duktape_ext.c:695:23: note: ')' token is here
+  id_complex_object = rb_intern("complex_object");
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+duktape_ext.c:731:31: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  rb_ivar_set(cComplexObject, rb_intern("duktape.instance"), oComplexObject);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+duktape_ext.c:731:31: note: '{' token is here
+  rb_ivar_set(cComplexObject, rb_intern("duktape.instance"), oComplexObject);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+duktape_ext.c:731:31: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  rb_ivar_set(cComplexObject, rb_intern("duktape.instance"), oComplexObject);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+duktape_ext.c:731:31: note: ')' token is here
+  rb_ivar_set(cComplexObject, rb_intern("duktape.instance"), oComplexObject);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/pashmac/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+4 warnings generated.
+linking shared-object duktape_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/pashmac/Downloads/hydejack-starter-kit-9.1.6_ok/vendor/bundle/ruby/2.7.0/gems/duktape-2.7.0.0/ext/duktape
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 duktape_ext.bundle ./.gem.20230817-15727-1q4lntl
