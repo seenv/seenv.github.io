@@ -1,5 +1,6 @@
 .DS_Store
 404.md
+_site/
 _data/authors.yml
 _data/social.yml
 _data/strings.yml
