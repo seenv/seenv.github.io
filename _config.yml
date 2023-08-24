@@ -86,8 +86,8 @@ apple_touch_icon: /needs/icon/icon-192x192.png
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
-#remote_theme: /hydecorp/hydejack@v9
+#theme: jekyll-theme-hydejack
+remote_theme: /hydecorp/hydejack@v9
 
 
 # Customizaton
